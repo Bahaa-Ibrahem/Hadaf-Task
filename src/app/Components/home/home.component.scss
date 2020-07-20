@@ -1,11 +1,9 @@
-h1 {
-    color: gray;
-    margin: 25px 0;
-}
-form .text-left span {
-    font-size: 18px;
-    font-weight: 400;
-}
-.disCount {
-    display: flex;
+.posts {
+    margin: 20px auto 75px;
+    h2 {
+        text-align: center;
+    }
+    li {
+        cursor: pointer;
+    }
 }

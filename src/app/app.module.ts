@@ -11,6 +11,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms'
 import { DataService } from './Services/data.service';
 import { HttpClientModule } from '@angular/common/http';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { PostComponent } from './Components/post/post.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     NotFoundComponent,
     NavbarComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
