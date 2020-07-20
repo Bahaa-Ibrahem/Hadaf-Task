@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class DataService {
 
-  constructor(private http : HttpClient) { }
+  constructor(private http: HttpClient) { }
 
   getAllPosts() {
     return this.http.get(`https://jsonplaceholder.typicode.com/posts`);
@@ -15,5 +15,13 @@ export class DataService {
 
   getPost(id) {
     return this.http.get(`https://jsonplaceholder.typicode.com/posts/${id}`);
+  }
+
+  removePost(id) {
+    return this.http.delete(`https://jsonplaceholder.typicode.com/posts/${id}`);
+  }
+
+  updatePost(form) {
+    return this.http.put(`https://jsonplaceholder.typicode.com/posts/${form.id}`, form);
   }
 }
