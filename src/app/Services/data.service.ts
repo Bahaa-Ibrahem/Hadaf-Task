@@ -9,4 +9,11 @@ export class DataService {
 
   constructor(private http : HttpClient) { }
 
+  getAllPosts() {
+    return this.http.get(`https://jsonplaceholder.typicode.com/posts`);
+  }
+
+  getPost(id) {
+    return this.http.get(`https://jsonplaceholder.typicode.com/posts/${id}`);
+  }
 }
